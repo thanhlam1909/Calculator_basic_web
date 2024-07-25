@@ -1,0 +1,83 @@
+html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Đảm bảo chiều cao tối thiểu của body */
+}
+
+header {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    box-sizing: border-box; /* Đảm bảo padding không làm tăng chiều rộng tổng thể */
+}
+
+.header-title {
+    margin: 0; /* Xóa margin của tiêu đề */
+}
+
+main {
+    flex: 1; /* Tạo không gian còn lại cho main để căn giữa nội dung */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 20px; /* Thêm padding để không bị dính vào cạnh của cửa sổ */
+}
+
+.calculator {
+    border: 1px solid #ddd;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.display {
+    margin-bottom: 10px;
+}
+
+.display input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2em;
+    text-align: right;
+    border: none; /* Ẩn viền của input */
+    border-radius: 5px; /* Đặt góc bo tròn nếu cần */
+    box-shadow: 0 0 0  #ddd inset; /* Thêm bóng nội bộ để thay thế viền */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.buttons button {
+    padding: 15px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #f0f0f0;
+}
+
+.buttons button:hover {
+    background: #e0e0e0;
+}
+footer {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    box-sizing: border-box; /* Đảm bảo padding không làm tăng chiều rộng tổng thể */
+}
